@@ -109,10 +109,15 @@ a:hover, a:visited, a:active {
     transform: scale(1);
 }
 
-
-
 @media (max-width: 480px) {
     body {
-        margin: 0;
+        margin: 0 2%;
+    }
+    nav{
+        font-size: 21px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 40px;
     }
 }
