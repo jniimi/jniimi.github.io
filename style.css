@@ -29,6 +29,10 @@ p.desc{
     line-height: 1.2;
     margin-bottom: 0;
   }
+narrow{
+    margin-left: 50px;
+    margin-right: 50px;
+    }
 .heading{
     font-size: 21px;
     margin-top: 30px;
@@ -67,14 +71,8 @@ a:hover, a:visited, a:active {
     display: flex;
     justify-content: space-between;
 }
-.left{
-    margin-left: 25px;
-    width: 24%;
-}
-.right{
-    width: 75%;
-}
-@media (max-width: 480px) { /* スマホサイズ */
-    body {margin: 0 2%;}
-    .left, .right {width: 100%;}
+@media (max-width: 480px) {
+    body {
+        margin: 0;
+    }
 }
