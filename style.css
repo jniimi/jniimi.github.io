@@ -3,6 +3,7 @@ body {
     margin-top: 3%;
     margin-left:12%;
     margin-right:12%;
+    transition: background-color 0.3s, color 0.3s;
 }
 .title{
     margin-top: 48px;
@@ -71,6 +72,45 @@ a:hover, a:visited, a:active {
     display: flex;
     justify-content: space-between;
 }
+
+.dark-theme {
+    background-color: #000;
+    color: #FFF;
+}
+.dark-theme .feed-item a {
+    color: #ADD8E6;
+}
+.dark-theme .feed-item a:hover {
+    color: #1E90FF;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFF;
+    color: #000;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+}
+.btn:active {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1);
+}
+
+
+
 @media (max-width: 480px) {
     body {
         margin: 0;
