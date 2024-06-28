@@ -55,6 +55,9 @@ narrow{
 .profile_desc{
     font-weight: 300;
 }
+.item_narrow{
+    margin-bottom: 0.25em;
+}
 .item{
     margin-bottom: 0.75em;
 }
