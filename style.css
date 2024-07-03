@@ -18,6 +18,15 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+li.icon{
+    display: inline;
+    margin-right: 8px;
+}
+.rounded-icon {
+    width: 42px;
+    border-radius: 10%;
+    border: 0.5px solid grey;
+  }
 nav{
     margin: 0;
     font-size: 21px;
