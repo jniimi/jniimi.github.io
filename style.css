@@ -12,7 +12,7 @@
     color: #F0F9F2;
     background-color: #081826;
     font-family: "Yu Gothic", "游ゴシック体", YuGothic, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    font-weight: 100;
+    font-weight: 300;
   }
   .header {
     position: relative;
@@ -206,6 +206,7 @@
     animation: appearArrow 1s forwards;
     animation-delay: 2s;
     cursor: pointer;
+    z-index: 2;
   }
   
   @keyframes appearArrow {
