@@ -1,46 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jniimilab: Research Information</title>
-
-    <meta property="og:title" content="jniimilab">
-    <meta property="og:description" content="jniimilab Research Information">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jniimi.github.io/img/thumb.png">
-    <meta property="og:url" content="https://jniimi.github.io">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="jniimilab">
-    <meta name="twitter:description" content="jniimilab Research Information">
-    <meta name="twitter:image" content="https://jniimi.github.io/img/thumb.png">
-    <meta name="twitter:url" content="https://jniimi.github.io">
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Lab Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="preloader"></div>
-    <header>
-        <div class="headarea"><img width="240px" class="center_image" src="img/jniimilab.png"></div>
-        <nav>
-            <a href="index.html">Top</a>
-            <a href="research.html">Research</a>
-            <a href="education.html">Education</a>
-            <a href="seminar.html">Seminar</a>
-            <a href="https://note.com/jniimi" target="_blank">Blog</a>
-        </nav>
-    </header>
-    
-    <h2 class="heading">新美 潤一郎 (Junichiro Niimi)</h2>
+  <div class="hero">
+    <video autoplay muted playsinline>
+      <source src="img/background.webm" type="video/webm">
+    </video>
+    <nav class="menu">
+        <a href="index.html">Top</a>
+        <a href="research.html">Research</a>
+        <a href="education.html">Education</a>
+        <a href="seminar.html">Seminar</a>
+        <a href="https://note.com/jniimi" target="_blank">Blog</a>
+    </nav>
+    <a href="#content" class="scroll-arrow">▽ Scroll ▽</a>
+  </div>
+
+  <div id="content" class="content">
+    <h1>新美 潤一郎 (Junichiro Niimi)</h1>
     <ul>
-        <li class="item_narrow">名城大学 経営学部経営学科 准教授</li>
-        <li class="item_narrow">理化学研究所 革新知能統合研究センター (RIKEN AIP) 客員研究員</li>
-        <li class="item_narrow">名古屋大学大学院経済学研究科 国際政策経済研究センター 共同研究員</li>
-        <li class="item_narrow">企業の技術顧問・アドバイザー、音楽・現代アートのお仕事やイベント運営など</li>
+        <li>名城大学 経営学部経営学科 准教授</li>
+        <li>理化学研究所 革新知能統合研究センター (RIKEN AIP) 客員研究員</li>
+        <li>名古屋大学大学院経済学研究科 国際政策経済研究センター 共同研究員</li>
+        <li>企業の技術顧問・アドバイザー、音楽・現代アートのお仕事やイベント運営など</li></li>
     </ul>
-    <p class="desc">深層学習のアーキテクチャや特徴抽出手法の開発およびそれらの行動予測への応用などの研究を行っています。</p>
-    <ul>
+    <p>深層学習のアーキテクチャや特徴抽出手法の開発およびそれらの行動予測への応用などの研究を行っています。</p>
+
+    <ul class="social-icon">
         <li class="icon"><a href="https://researchmap.jp/jniimi" target="_blank"><img src="icons/rm.png" class="rounded-icon"></a></li>
         <li class="icon"><a href="https://www.researchgate.net/profile/Junichiro-Niimi" target="_blank"><img src="icons/researchgate.svg" class="rounded-icon"></a></li>
         <li class="icon"><a href="https://orcid.org/0000-0002-4618-6272" target="_blank"><img src="icons/orcid.svg" class="rounded-icon"></a></li>
@@ -51,180 +41,111 @@
         <li class="icon"><a href="https://niimiseminar.slack.com" target="_blank"><img src="icons/slack.svg" class="rounded-icon"></a></li>
         <p>*Slackは招待済みの関係者のみアクセス可能</p>
     </ul>
-    
-    <h1 class="title">Research Interests</h1>
-    <p class="desc">機械学習の手法開発の研究と、消費者の行動予測を中心とした応用研究を行っています。<br>
-        リンク先は関連するいくつかの研究(J-STAGE, Researchmap等)。</p>
-    <ul>
-        <li class="item">
-            <div class="item_desc">指標開発</div>
-            <ul><li>
-                統計解析による消費者行動のモデリングのための指標開発<!--
-            --><a class="ref tooltip" href="https://doi.org/10.5023/jappstat.44.121" target="_blank">[1]<span class="tooltiptext">新美・星野（2015）「ユーザ別アクセス・パターン情報の多様性を用いた顧客行動の予測とモデリング」『応用統計学』</span></a><!--
-            --><a class="ref tooltip" href="https://doi.org/10.2333/jbhmk.47.27" target="_blank">[3]<span class="tooltiptext">新美・星野（2020）「RFMC分析におけるClumpiness指標の拡張と自社顧客の行動予測への応用」『行動計量学』</span></a>
-            </li></ul>
-            <ul><li>
-                深層学習における特徴抽出の限界の指摘と特徴量の設計<!--
-            --><a class="ref tooltip" href="https://doi.org/10.1527/tjsai.B-G63" target="_blank">[2]<span class="tooltiptext">新美・星野（2017）「顧客行動の多様性変数を利用した購買行動の予測」『人工知能学会論文誌』</span></a><!--
-            --><a class="ref tooltip" href="https://www.researchgate.net/publication/354173314_shijiandanweiClumpinesszhibiaowoyongitajiexishoufanotian_-shengcunshijianfenxitoLSTM-RNNwoyongitaliyongpindulituoshijiannoyucehenoRFMCfenxinohuoyong-_Customer_Behavior_Prediction_using_hourly-Clumpine" target="_blank">[7]<span class="tooltiptext">新美（2021）「時間単位Clumpiness指標を用いた解析手法の提案」『名城論叢』</span></a>
-            </li></ul>
+
+    <h2>Research Interests</h2>
+    <p>機械学習の手法開発の研究と、消費者の行動予測を中心とした応用研究を行っています。</p>
+
+    <ul class="toppage-domain-list">
+        <li class="toppage-domain-list">指標開発
+            <ul class="toppage-domain-list-deep">
+                <li>統計解析による消費者行動のモデリングのための指標開発</li>
+                <li>深層学習における特徴抽出の限界の指摘と特徴量の設計</li>
+            </ul>
         </li>
-        <li class="item">
-            <div class="item_desc">深層学習</div>
-            <ul><li>
-                深層学習におけるマルチモーダル学習アーキテクチャーの設計<!--
-            --><a class="ref tooltip" href="https://doi.org/10.5023/jappstat.53.15" target="_blank">[4]<span class="tooltiptext">新美 (2024)「異なる次元数のデータを同時に投入した行動的ロイヤルティ推計手法の提案」『応用統計学』</span></a><!--
-            --><a class="ref tooltip" href="https://doi.org/10.48550/arXiv.2405.07435" target="_blank">[5]<span class="tooltiptext">Junichiro Niimi (2024) An Efficient Multimodal Learning Framework to Comprehend Consumer Preferences Using BERT and Cross-Attention, arXiv.</span></a><!--
-            --><a class="ref tooltip" href="https://doi.org/10.48550/arXiv.2401.11888" target="_blank">[6]<span class="tooltiptext">Junichiro Niimi (2024) Multimodal Deep Learning of Word-of-Mouth Text and Demographics to Predict Customer Rating: Handling Consumer Heterogeneity in Marketing, arXiv.</span></a>
-            </li></ul>
-            <ul><li>
-                マルチソースを共変量とした非線形の欠損予測手法の開発<!--
-            --><a class="ref tooltip" href="https://researchmap.jp/jniimi/presentations/32852480" target="_blank">[9]<span class="tooltiptext">新美・星野 (2017) Deep Boltzmann Machine を用いたデータ融合手法の提案, 人工知能学会全国大会.</span></a>
-            </li></ul>
-            <ul><li>
-                新たなアーキテクチャーの構造の理解と応用
-                <a class="ref tooltip" href="https://doi.org/10.51094/jxiv.893" target="_blank">[12]<span class="tooltiptext">新美 (2024) Kolmogorov-Arnold Networkのマーケティング解析への応用可能性の検討. Jxiv.</span></a>
-            </li></ul>
+        <li class="toppage-domain-list">深層開発
+            <ul class="toppage-domain-list-deep">
+                <li>深層学習におけるマルチモーダル学習アーキテクチャーの設計</li>
+                <li>マルチソースを共変量とした非線形の欠損予測手法の開発</li>
+                <li>新たなアーキテクチャーの構造の理解と応用</li>
+            </ul>
         </li>
-        <li class="item">
-            <div class="item_desc">大規模言語モデル</div>
-            <ul><li>
-                大規模言語モデルを応用したアノテーション手法の開発<!--
-            --><a class="ref tooltip" href="https://doi.org/10.48550/arXiv.2407.13069" target="_blank">[8]<span class="tooltiptext">Junichiro Niimi (2024) Dynamic Sentiment Analysis with Local Large Language Models using Majority Voting: A Study on Factors Affecting Restaurant Evaluation. arXiv.</span></a><!--
-            --><a class="ref tooltip" href="https://researchmap.jp/jniimi/presentations/46531654" target="_blank">[9]<span class="tooltiptext">新美・竹内(2024)大規模言語モデルによるテキストからのアノテーション手法の提案：任意の観点から得点化可能なテキストマイニング手法によるレビュー文書のセンチメント分析. 消費者行動研究コンファレンス.</span></a><!--
-            --><a class="ref tooltip" href="https://ken.ieice.org/ken/paper/20240902icer/" target="_blank">[10]<span class="tooltiptext">新美(2024)ローカル大規模言語モデルの量子化やモデル規模が予測性能に与える影響の検証 ～レストラン評価に関するオンラインレビューのセンチメント分析から～. 信学技報(2024-09-NLC, IEICE).</span></a></a>
-            </li></ul>
-            <ul><li>
-                LLMの推論におけるアンサンブルの導入<!--
-            --><a class="ref tooltip" href="https://doi.org/10.48550/arXiv.2407.13069" target="_blank">[8]<span class="tooltiptext">Junichiro Niimi (2024) Dynamic Sentiment Analysis with Local Large Language Models using Majority Voting: A Study on Factors Affecting Restaurant Evaluation. arXiv.</span></a>
-            </li></ul>
-            <ul><li>
-                プロンプトへの情報投入手法の比較検討<!--
-            --><a class="ref tooltip" href="https://ken.ieice.org/ken/paper/202412133cg0/" target="_blank">[11]<span class="tooltiptext">新美 潤一郎 (2024)「ローカル大規模言語モデルによるセンチメント分析において評価の参照点の有無や提示方法が予測精度に与える影響の検証 ～レストラン評価に関するオンラインレビューのセンチメント分析から～」情報処理学会・電子情報通信学会 第11回自然言語処理シンポジウム, 名古屋大学.</span></a>
-            </li></ul>
+        <li class="toppage-domain-list">大規模言語モデル(LLM)
+            <ul class="toppage-domain-list-deep">
+                <li>大規模言語モデルを応用したアノテーション手法の開発</li>
+                <li>LLMの推論におけるアンサンブルの導入</li>
+                <li>プロンプトへの情報投入手法の比較検討</li>
+            </ul>
         </li>
-    </ul> 
-    
-    <h1 class="title">Carrers</h1>
-    <h2 class="heading">Main</h2>
-    <ul>
-        <li><div class="item_citation">2009 – 2013 名古屋大学 経済学部 </div></li>
-        <li><div class="item_citation">2013 – 2015 名古屋大学大学院 経済学研究科 博士課程（前期課程）</div></li>
-        <li><div class="item_citation">2015 – 2018 名古屋大学大学院 経済学研究科 博士課程（後期課程）</div></li>
-        <li><div class="item_citation">2018 – 2019 理化学研究所 革新知能統合研究センター 経済経営情報融合分析チーム 特別研究員</div></li>
-        <li><div class="item_citation">2019 – 2022 名城大学 経営学部 経営学科 助教</div></li>
-        <li><div class="item_citation">2022 – 現 在 名城大学 経営学部 経営学科 准教授</div></li>
-    </ul>
-    
-    <h3 class="heading">- RIKEN</h3>
-    <ul>
-        <li><div class="item_citation">2017 – 2018 理化学研究所 革新知能統合研究センター 経済経営情報融合分析チーム 研修生</div></li>
-        <li><div class="item_citation">2018 – 2019 理化学研究所 革新知能統合研究センター 経済経営情報融合分析チーム 特別研究員</div></li>
-        <li><div class="item_citation">2020 – 現 在 理化学研究所 革新知能統合研究センター 経済経営情報融合分析チーム 客員研究員</div></li>
-    </ul>
-    
-    <h3 class="heading">- MEIDAI</h3>
-    <ul>
-        <li><div class="item_citation">2009 – 2013 名古屋大学 経済学部 </div></li>
-        <li><div class="item_citation">2013 – 2015 名古屋大学大学院 経済学研究科 博士課程（前期課程）</div></li>
-        <li><div class="item_citation">2015 – 2018 名古屋大学大学院 経済学研究科 博士課程（後期課程）</div></li>
-        <li><div class="item_citation">2013 – 2018 名古屋大学PhDプロフェッショナル登龍門 第一期生</div></li>
-        <li><div class="item_citation">2020 – 現 在 名古屋大学大学院 経済学研究科 国際経済政策研究センター 共同研究員</div></li>
-        <li><div class="item_citation">2020 – 現 在 名古屋大学大学院 工学研究科 DII卓越大学院プログラム 非常勤講師</div></li>
-    </ul>
-    
-    <h3 class="heading">- KAIGAI</h3>
-    <ul>
-        <li><div class="item_citation">Aug. 2014 ELC (Malaysia)</div></li>
-        <li><div class="item_citation">Jun. 2015 North Carolina State University (USA)</div></li>
-        <li><div class="item_citation">Mar. 2016 IBM Headquaters & Watson Research Center, (NY, USA)</div></li>
-        <li><div class="item_citation">Feb. 2018 Northwestern University (IL, USA)</div></li>
-        <li><div class="item_citation">Other Projects in Mongolia, Cambodia, Kyrgyzstan, etc…</div></li>
-    </ul>
-    
-    <h3 class="heading">- Societies</h3>
-    <ul>
-        <li><div class="item_citation">2024 – 情報処理学会 (<a href="https://www.ipsj.or.jp/" target="_blank">IPSJ</a>)</div></li>
-        <li><div class="item_citation">2023 – 応用統計学会 (<a href="https://www.applstat.gr.jp" target="_blank">JSAS</a>)</div></li>
-        <li><div class="item_citation">2018 – 人工知能学会 (<a href="http://ai-gakkai.or.jp" target="_blank">JSAI</a>)</div></li>
-        <li><div class="item_citation">2015 – 日本行動計量学会 (<a href="https://bms.gr.jp" target="_blank">BMS</a>)</div></li>
-        <li><div class="item_citation">2013 – 日本マーケティング・サイエンス学会 (<a href="http://jims.gr.jp" target="_blank">JIMS</a>)</div></li>
     </ul>
 
-    <h3 class="heading">- Social Activities</h3>
-    <ul>
-        <li><div class="item_citation">2019 – 各学会での研究大会の運営や論文の査読等</div></li>
-        <li><div class="item_citation">2021 – 日本マルファン協会（<a href="https://marfan.jp" target="_blank">marfan.jp</a>）</div></li>
+    <h2>Carrers</h2>
+    <h3>- Main</h3>
+    <ul class="toppage-carrer-list">
+        <li>2009 – 2013 名古屋大学 経済学部</li>
+        <li>2013 – 2015 名古屋大学大学院 経済学研究科 博士課程（前期課程）</li>
+        <li>2015 – 2018 名古屋大学大学院 経済学研究科 博士課程（後期課程）</li>
+        <li>2018 – 2019 理化学研究所 革新知能統合研究センター 経済経営情報融合分析チーム 特別研究員</li>
+        <li>2019 – 2022 名城大学 経営学部 経営学科 助教</li>
+        <li>2022 – 現 在 名城大学 経営学部 経営学科 准教授</li>
     </ul>
-    
-    <h1 class="title">Scribbles</h1>
+
+    <h3>- RIKEN</h3>
+    <ul class="toppage-carrer-list">
+        <li>2017 – 2018 理化学研究所 革新知能統合研究センター 経済経営情報融合分析チーム 研修生</li>
+        <li>2018 – 2019 理化学研究所 革新知能統合研究センター 経済経営情報融合分析チーム 特別研究員</li>
+        <li>2020 – 現 在 理化学研究所 革新知能統合研究センター 経済経営情報融合分析チーム 客員研究員</li>
+    </ul>
+
+    <h3>- MEIDAI</h3>
+    <ul class="toppage-carrer-list">
+        <li>2009 – 2013 名古屋大学 経済学部</li>
+        <li>2013 – 2015 名古屋大学大学院 経済学研究科 博士課程（前期課程）</li>
+        <li>2015 – 2018 名古屋大学大学院 経済学研究科 博士課程（後期課程）</li>
+        <li>2013 – 2018 名古屋大学PhDプロフェッショナル登龍門 第一期生</li>
+        <li>2020 – 現 在 名古屋大学大学院 経済学研究科 国際経済政策研究センター 共同研究員</li>
+        <li>2020 – 現 在 名古屋大学大学院 工学研究科 DII卓越大学院プログラム 非常勤講師</li>
+    </ul>
+
+    <h3>- KAIGAI</h3>
+    <ul class="toppage-carrer-list">
+        <li>Aug. 2014 ELC (Malaysia)</li>
+        <li>Jun. 2015 North Carolina State University (USA)</li>
+        <li>Mar. 2016 IBM Headquaters & Watson Research Center, (NY, USA)</li>
+        <li>Feb. 2018 Northwestern University (IL, USA)</li>
+        <li>Other Projects in Mongolia, Cambodia, Kyrgyzstan, etc…</li>
+    </ul>
+
+    <h3>- SOCIETY</h3>
+    <ul class="toppage-carrer-list">
+        <li>2024 – IPSJ: 情報処理学会</li>
+        <li>2023 – JSAS: 応用統計学会</li>
+        <li>2018 – JSAI: 人工知能学会</li>
+        <li>2015 – BMS: 日本行動計量学会</li>
+        <li>2013 – JIMS: 日本マーケティング・サイエンス学会</li>
+    </ul>
+
+    <h3>- SOCIAL ACTIVITIES</h3>
+    <ul class="toppage-carrer-list">
+        <li>2019 – 各学会での研究大会の運営や論文の査読等</li>
+        <li>2021 – 日本マルファン協会（<a href="https://marfan.jp" target="_blank">marfan.jp</a>）</li>
+    </ul>
+
+
+    <h2>Scribbles</h2>
     <p>ここに書かれた内容が私の所属するいかなる組織の意見を代表するものでもないことは自明であるとしても、さらに過去に書かれたあらゆる内容もその文脈における思考実験にすぎないという意味では、それらが現在まで一貫しているという保証など一体どこにあるというのでしょうか。</p>
-    <ul>
+    <ul class="toppage-article-list">
         <div id="rss-feed"></div>
     </ul>
-    <div class="container">
-    <div class="box">
-        <p><strong>Bogus items:</strong> 特にわけのわからないものたち</p>
-        <ul>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n92d50ed97f47" target="_blank">疑いようもなく完全であるという過信</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/nf225e68cacd5" target="_blank">恵まれコンプレックスとアイデンティティ探索の旅</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n5efec89913fa" target="_blank">我々は本当にただの機械</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/ne53aff78b40d" target="_blank">婚活データサイエンス2024</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n7beed457a12f" target="_blank">超知能、あるいは愛のようなもの。</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n92a100345634" target="_blank">僕らはただマトリクスのなかで</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n07c7da5b79c5" target="_blank">抑圧の奥を垣間見るとき</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n7e51f0fb52db" target="_blank">啓蒙なきモダニティにみる世界</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n8853f8932516" target="_blank">音楽における差異と同一性 = 展開と許容</a></div></li>
-        </ul>
-    </div>
-    <div class="box">
-        <p><strong>Practical items:</strong> なんか使えそうなものたち</p>
-        <ul>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n7237250ebfb0" target="_blank">ローカルLLMによるセンチメント分析のpreprint公開</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/nb914203f1e50" target="_blank">Kolmogorov-Arnold Networkの構造を深掘りする</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n06f30e9f7d04" target="_blank">Google Colabでユーザーのメールアドレスを取得</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/nf2249598a5c1" target="_blank">TextBlob、VADER、SO-CALをPythonでサクッと実行</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n7808d13da203" target="_blank">StreamlitでUser-Agentなどのユーザー情報を取得</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n33a281f2ef89" target="_blank">ColabでWeights & BiasesのAPI KEY入力を自動化</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n6de49d934a46" target="_blank">pandasのjoinで直積を作る</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n7965a1c32d61" target="_blank">Weights & BiasesをStatsmodelsで使う</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n0a6a87da77b7" target="_blank">Pythonのdatetimeで月間の日数を計算する</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/nfbe3549d5440" target="_blank">Colabノートブック上から別のノートブックを読み出す</a></div></li>
-            <li><div class="item_citation"><a href="https://note.com/jniimi/n/n1fe75105c82c" target="_blank">池田亮司から生成アートを考える</a></div></li>
-        </ul>
-    </div>
-    </div>
 
-    <h1 class="title">Contact</h1>
-    <p class="desc">
-        - 私個人のSNSアカウント、大学事務室や研究室への訪問、内線やダイヤルイン等を通じたご連絡はいずれもお受けしておりません。<br>
-        - 講義を履修している学生は授業中に提示した連絡方法を遵守してください。ゼミ生は <a href="https://niimiseminar.slack.com/" target="_blank">Slack</a> からお願いします。<br>
-        - 新美研究室（学部ゼミナールを含む）では消費者の行動要因の解明にあたり外部との連携による共同研究等を積極的に行っておりますが、就職活動や企業紹介を主目的としたイベントへの学生の斡旋・紹介等は一切行っておりません。そのような問い合わせは<a href="https://www.meijo-u.ac.jp/career/company/" target="_blank">本学キャリアセンター</a>までお願いします。<br>
-    </p>
-    <ul>
-        <li class="item">
-            <div class="item_desc">連絡先</div>
-            <div class="item_citation">学外の方からのご連絡は`jniimi@<名城大学のドメイン>`までお願いします。</div>
-        </li>
-        <li class="item">
-            <div class="item_desc">郵送先</div>
-            <div class="item_citation">468-8502 愛知県名古屋市天白区塩釜口1-501 名城大学経営学部 新美潤一郎 宛</div>
-            <div class="item_citation">Junichiro Niimi, Meijo University, 1-501, Shiogamaguchi, Tempaku-ku, Nagoya, Aichi, 4688502 Japan</div>
-        </li>
-    </ul>
+    <h2>Contact</h2>
+    <p class="contact-desc">- 私個人のSNSアカウント、大学事務室や研究室への訪問、内線やダイヤルイン等を通じたご連絡はいずれもお受けしておりません。</p>
+    <p class="contact-desc">- 講義を履修している学生は授業中に提示した連絡方法を遵守してください。ゼミ生は Slack からお願いします。</p>
+    <p class="contact-desc">- 新美研究室（学部ゼミナールを含む）では消費者の行動要因の解明にあたり外部との連携による共同研究等を積極的に行っておりますが、就職活動や企業紹介を主目的としたイベントへの学生の斡旋・紹介等は一切行っておりません。そのような問い合わせは<a href="https://www.meijo-u.ac.jp/career/company/" target="_blank">本学キャリアセンター</a>までお願いします。</p>
+    
+    <h3>- 連絡先</h3>
+    <p class="contact-desc">学外の方からのご連絡は`jniimi@<名城大学のドメイン>`までお願いします。</p>
+    
+    <h3>- 郵送先</h3>
+    <p class="contact-desc">468-8502 愛知県名古屋市天白区塩釜口1-501<br>名城大学経営学部 新美潤一郎 宛</p>
+    <p class="contact-desc">Junichiro Niimi, Meijo University<br>1-501, Shiogamaguchi, Tempaku-ku, Nagoya, Aichi, 4688502 Japan</p>
 
-    <br>
-    <br>
-    <p>
-        <strong>Acknowledgements</strong><br>
-        - Those pages are hosted by jniimilab with GitHub Pages.<br>
+    <h2>Acknowledgments</h2>
+    <p class="contact-desc">
+        - Those pages are hosted by jniimilab with <a href="https://pages.github.com" target="_blank">GitHub Pages</a>.<br>
         - Most of the brand icons are provided by <a href="https://github.com/edent/SuperTinyIcons" target="_blank">edent/SuperTinyIcons</a>.
     </p>
-    
-    <script src="rss.js"></script>
-    <script src="preloader.js"></script>
 
-    <button id="theme-toggle" class="btn">?</button>
-    <script src="theme-toggle.js"></script>
+  </div>
+  <script src="rss.js"></script>
 </body>
 </html>
