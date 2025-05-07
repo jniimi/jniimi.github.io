@@ -120,10 +120,10 @@
   ul.toppage-domain-list{
     margin-top: 30px;
     padding-left: 30px;
-    background-color: #12222B; /* じゅんさん指定色✨ */
-    padding: 20px 30px; /* 内側の余白調整して読みやすく */
-    border-radius: 8px; /* 少し丸みをつけてスタイリッシュに */
+    padding: 20px 30px 0px 50px;
+    border-radius: 8px;
     color: #f0f1f5;
+    border: 0.25px solid #f0f1f5;
   }
   li.toppage-domain-list{
     margin-bottom: 20px;
