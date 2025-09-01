@@ -8,10 +8,10 @@
   html, body {
     width: 100%;
     height: 100%;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Helvetica Neue', Arial, "Yu Gothic", "游ゴシック体", "YuGothic", sans-serif;
     color: #f0f1f5;
     background-color: #181c25;
-    font-family: "Yu Gothic", "游ゴシック体", "YuGothic", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    /*font-family: "Yu Gothic", "游ゴシック体", "YuGothic", "Segoe UI", "Helvetica Neue", Arial, sans-serif;*/
     font-weight: 300;
   }
   .header {
