@@ -63,9 +63,10 @@
       </ul>
       <p class="social-note">*Slackは招待済みの関係者のみアクセス可能</p>
     </div>
+    <a href="#research" class="scroll-arrow section-scroll">▽ Scroll ▽</a>
   </section>
 
-  <section class="full-section research-section">
+  <section id="research" class="full-section research-section">
     <h2 class="section-heading">Research Interests</h2>
     <div class="research-cards">
       <div class="research-card">
@@ -95,10 +96,11 @@
         </ul>
       </div>
     </div>
+    <a href="#careers" class="scroll-arrow section-scroll">▽ Scroll ▽</a>
   </section>
 
   <!-- Careers Section -->
-  <section class="full-section careers-section">
+  <section id="careers" class="full-section careers-section">
     <h2 class="section-heading">Main Career</h2>
     <div class="timeline-window">
       <div class="timeline">
@@ -176,19 +178,21 @@
     </div>
     <p class="careers-note">Internship: IBM New York & Watson Research Center<br>
         Study Abroad: Mongolia, Cambodia, Kyrgyz Republic, Malaysia, USA (Illinois & North Carolina)</p>
+    <a href="#scribbles" class="scroll-arrow section-scroll">▽ Scroll ▽</a>
   </section>
 
   <!-- Scribbles Section -->
-  <section class="full-section scribbles-section">
+  <section id="scribbles" class="full-section scribbles-section">
     <div class="section-center-content">
       <h2 class="section-heading">Scribbles</h2>
       <p class="scribbles-desc">ここに書かれた内容が私の所属するいかなる組織の意見を代表するものでもないことは自明であるとしても、さらに過去に書かれたあらゆる内容もその文脈における思考実験にすぎないという意味では、それらが現在まで一貫しているという保証など一体どこにあるというのでしょうか。</p>
       <div id="rss-feed" class="rss-feed"></div>
     </div>
+    <a href="#contact" class="scroll-arrow section-scroll">▽ Scroll ▽</a>
   </section>
 
   <!-- Contact Section -->
-  <section class="full-section contact-section">
+  <section id="contact" class="full-section contact-section">
     <div class="contact-image">
       <h2 class="contact-heading">Contact</h2>
     </div>
@@ -216,35 +220,38 @@
   </footer>
   <script src="rss.js"></script>
   <script>
-    document.querySelector('.scroll-arrow').addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector('#content');
-      const start = window.pageYOffset;
-      const end = target.offsetTop;
-      const duration = 1500;
-      let startTime = null;
+    document.querySelectorAll('.scroll-arrow').forEach(function(arrow) {
+      arrow.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+        const start = window.pageYOffset;
+        const end = target.offsetTop;
+        const duration = 1500;
+        let startTime = null;
 
-      // Disable snap during animation
-      document.documentElement.style.scrollSnapType = 'none';
+        // Disable snap during animation
+        document.documentElement.style.scrollSnapType = 'none';
 
-      function easeInOutCubic(t) {
-        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-      }
-
-      function scroll(currentTime) {
-        if (!startTime) startTime = currentTime;
-        const elapsed = currentTime - startTime;
-        const progress = Math.min(elapsed / duration, 1);
-        window.scrollTo(0, start + (end - start) * easeInOutCubic(progress));
-        if (progress < 1) {
-          requestAnimationFrame(scroll);
-        } else {
-          // Re-enable snap after animation
-          document.documentElement.style.scrollSnapType = 'y mandatory';
+        function easeInOutCubic(t) {
+          return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
         }
-      }
 
-      requestAnimationFrame(scroll);
+        function scroll(currentTime) {
+          if (!startTime) startTime = currentTime;
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          window.scrollTo(0, start + (end - start) * easeInOutCubic(progress));
+          if (progress < 1) {
+            requestAnimationFrame(scroll);
+          } else {
+            // Re-enable snap after animation
+            document.documentElement.style.scrollSnapType = 'y mandatory';
+          }
+        }
+
+        requestAnimationFrame(scroll);
+      });
     });
   </script>
 </body>

@@ -746,6 +746,31 @@
   .scroll-arrow:hover {
     color: #f0f1f5;
   }
+  .section-scroll {
+    animation: none;
+    opacity: 0.7;
+  }
+  .about-section {
+    position: relative;
+  }
+  .about-section .section-scroll {
+    color: rgba(26, 31, 46, 0.5);
+  }
+  .about-section .section-scroll:hover {
+    color: #1a1f2e;
+  }
+  .research-section {
+    position: relative;
+  }
+  .careers-section {
+    position: relative;
+  }
+  .scribbles-section {
+    position: relative;
+  }
+  .contact-section {
+    position: relative;
+  }
   
   @keyframes appearArrow {
     from { opacity: 0; transform: translate(-50%, 20px); }
