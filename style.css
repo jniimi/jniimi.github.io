@@ -464,7 +464,7 @@
   }
   .scribbles-desc {
     font-size: 1rem;
-    line-height: 2;
+    line-height: 1.25;
     color: #aaa;
     margin-bottom: 40px;
     text-align: left;
