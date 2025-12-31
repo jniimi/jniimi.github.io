@@ -306,11 +306,29 @@
 
   /* Careers Section (scrollable inside) */
   .careers-section {
-    background-color: #181c25;
+    background-image: url('img/career-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 60px 40px;
+  }
+  .careers-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 28, 37, 0.75);
+    z-index: 0;
+  }
+  .careers-section > * {
+    position: relative;
+    z-index: 1;
   }
   .careers-section .section-heading {
     margin-bottom: 30px;
@@ -321,7 +339,7 @@
     max-height: 60vh;
     overflow-y: auto;
     padding: 20px 30px;
-    background-color: rgba(255, 255, 255, 0.03);
+    background-color: rgba(0, 0, 0, 0.33);
     border-radius: 8px;
   }
   .timeline {
@@ -381,13 +399,13 @@
   }
   .timeline-desc {
     font-size: 0.85rem;
-    color: #777;
+    color: #999;
     margin-top: 5px;
     padding-left: 0;
   }
   .careers-note {
-    font-size: 0.85rem;
-    color: #666;
+    font-size: 0.95rem;
+    color: #999;
     margin-top: 20px;
     text-align: center;
   }
