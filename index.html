@@ -37,55 +37,65 @@
     <a href="#content" class="scroll-arrow">▽ Scroll ▽</a>
   </div>
 
-  <div id="content" class="content">
-    <h1>Junichiro Niimi</h1>
-    <ul>
+  <section id="content" class="full-section about-section">
+    <div class="section-image">
+      <img src="img/profile.jpg" alt="Junichiro Niimi">
+    </div>
+    <div class="section-content">
+      <h1 class="section-title">Junichiro Niimi</h1>
+      <ul class="affiliation-list">
         <li>名城大学 経営学部経営学科 准教授</li>
         <li>理化学研究所 革新知能統合研究センター (RIKEN AIP) 客員研究員</li>
         <li>名古屋大学大学院経済学研究科 国際政策経済研究センター 共同研究員</li>
-        <li>企業の技術顧問・アドバイザー、音楽・現代アートのお仕事やイベント運営など</li></li>
-    </ul>
-    <p>深層学習のアーキテクチャや特徴抽出手法の開発およびそれらの行動予測への応用などの研究を行っています。</p>
+        <li>企業の技術顧問・アドバイザー、音楽・現代アートのお仕事やイベント運営など</li>
+      </ul>
+      <p class="about-desc">深層学習のアーキテクチャや特徴抽出手法の開発およびそれらの行動予測への応用などの研究を行っています。</p>
 
-    <ul class="social-icon">
+      <ul class="social-icon">
         <li class="icon"><a href="https://researchmap.jp/jniimi" target="_blank"><img src="icons/rm.png" class="rounded-icon"></a></li>
-        <!--<li class="icon"><a href="https://www.researchgate.net/profile/Junichiro-Niimi" target="_blank"><img src="icons/researchgate.svg" class="rounded-icon"></a></li>-->
-        <!--<li class="icon"><a href="https://orcid.org/0000-0002-4618-6272" target="_blank"><img src="icons/orcid.svg" class="rounded-icon"></a></li>-->
-        <!--<li class="icon"><a href="https://scholar.google.co.jp/citations?user=Qfg4LPgAAAAJ" target="_blank"><img src="icons/scholar.svg" class="rounded-icon"></a></li>-->
         <li class="icon"><a href="https://note.com/jniimi" target="_blank"><img src="icons/note.svg" class="rounded-icon"></a></li>
         <li class="icon"><a href="http://x.com/jvckandersen" target="_blank"><img src="icons/x.svg" class="rounded-icon"></a></li>
         <li class="icon"><a href="https://github.com/jniimi/" target="_blank"><img src="icons/github.svg" class="rounded-icon"></a></li>
         <li class="icon"><a href="https://niimiseminar.slack.com" target="_blank"><img src="icons/slack.svg" class="rounded-icon"></a></li>
         <li class="icon"><a href="https://ko-fi.com/jniimi" target="_blank"><img src="img/kofi.png" height="42px" class="rounded-icon-height"></a></li>
-        <p>*Slackは招待済みの関係者のみアクセス可能</p>
-    </ul>
+      </ul>
+      <p class="social-note">*Slackは招待済みの関係者のみアクセス可能</p>
+    </div>
+  </section>
 
-    <h2>Research Interests</h2>
-    <p>機械学習の手法開発の研究と、消費者の行動予測を中心とした応用研究を行っています。</p>
+  <section class="full-section research-section">
+    <h2 class="research-section-title">Research Interests</h2>
+    <div class="research-cards">
+      <div class="research-card">
+        <h3 class="research-card-title">指標開発</h3>
+        <div class="research-card-divider"></div>
+        <ul class="research-card-list">
+          <li>統計解析による消費者行動のモデリングのための指標開発</li>
+          <li>深層学習における特徴抽出の限界の指摘と特徴量の設計</li>
+        </ul>
+      </div>
+      <div class="research-card">
+        <h3 class="research-card-title">深層学習</h3>
+        <div class="research-card-divider"></div>
+        <ul class="research-card-list">
+          <li>深層学習におけるマルチモーダル学習アーキテクチャーの設計</li>
+          <li>マルチソースを共変量とした非線形の欠損予測手法の開発</li>
+          <li>新たなアーキテクチャーの構造の理解と応用</li>
+        </ul>
+      </div>
+      <div class="research-card">
+        <h3 class="research-card-title">大規模言語モデル (LLM)</h3>
+        <div class="research-card-divider"></div>
+        <ul class="research-card-list">
+          <li>大規模言語モデルを応用したアノテーション手法の開発</li>
+          <li>LLMの推論におけるアンサンブルの導入</li>
+          <li>プロンプトへの情報投入手法の比較検討</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <ul class="toppage-domain-list">
-        <li class="toppage-domain-list">指標開発
-            <ul class="toppage-domain-list-deep">
-                <li>統計解析による消費者行動のモデリングのための指標開発</li>
-                <li>深層学習における特徴抽出の限界の指摘と特徴量の設計</li>
-            </ul>
-        </li>
-        <li class="toppage-domain-list">深層学習
-            <ul class="toppage-domain-list-deep">
-                <li>深層学習におけるマルチモーダル学習アーキテクチャーの設計</li>
-                <li>マルチソースを共変量とした非線形の欠損予測手法の開発</li>
-                <li>新たなアーキテクチャーの構造の理解と応用</li>
-            </ul>
-        </li>
-        <li class="toppage-domain-list">大規模言語モデル(LLM)
-            <ul class="toppage-domain-list-deep">
-                <li>大規模言語モデルを応用したアノテーション手法の開発</li>
-                <li>LLMの推論におけるアンサンブルの導入</li>
-                <li>プロンプトへの情報投入手法の比較検討</li>
-            </ul>
-        </li>
-    </ul>
-
+  <div class="content">
     <h2>Carrers</h2>
     <h3>- Main</h3>
     <ul class="toppage-carrer-list">
