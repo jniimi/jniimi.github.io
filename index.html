@@ -21,6 +21,13 @@
 </head>
 <body>
   <div class="hero">
+    <script>
+      (function() {
+        var bgs = ['img/hero-bg1.jpg', 'img/hero-bg2.jpg'];
+        var img = bgs[Math.floor(Math.random() * bgs.length)];
+        document.querySelector('.hero').style.backgroundImage = "url('" + img + "')";
+      })();
+    </script>
     <div class="hero-overlay"></div>
     <nav class="menu">
         <a href="index.html">Top</a>

@@ -39,7 +39,7 @@
     height: 100vh;
     overflow: hidden;
     background: linear-gradient(135deg, #1a1f2e 0%, #2d3548 50%, #1a1f2e 100%);
-    background-image: url('img/hero-bg.jpg');
+    /* background-image is set randomly by inline script in index.html */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
