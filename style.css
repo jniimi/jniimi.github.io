@@ -482,8 +482,8 @@
     position: relative;
   }
   .devs-image {
-    flex: 0 0 40%;
-    max-width: 40%;
+    flex: 0 0 50%;
+    max-width: 50%;
     overflow: hidden;
   }
   .devs-image img {
@@ -492,7 +492,7 @@
     object-fit: cover;
   }
   .devs-content {
-    flex: 1 1 60%;
+    flex: 1 1 50%;
     min-width: 0;
     padding: 60px 50px;
     display: flex;
