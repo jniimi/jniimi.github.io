@@ -1,1 +1,6 @@
 .DS_Store
+.python-version
+.venv/
+pyproject.toml
+uv.lock
+main.py
