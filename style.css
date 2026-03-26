@@ -476,91 +476,90 @@
     color: #EE7674;
   }
 
-  /* Tools Section */
-  .tools-section {
+  /* Devs Section */
+  .devs-section {
     background-color: #1e2433;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 40px;
     position: relative;
   }
-  .tools-cards {
-    display: flex;
-    gap: 30px;
-    max-width: 1200px;
-    width: 100%;
-    justify-content: center;
-  }
-  .tools-card {
+  .devs-image {
     flex: 1;
-    max-width: 480px;
+    min-width: 40%;
+    overflow: hidden;
+  }
+  .devs-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .devs-content {
+    flex: 1;
+    padding: 60px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+  }
+  .devs-heading {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  .devs-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .devs-card {
     background-color: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 50px 40px;
+    padding: 25px 30px;
     display: flex;
     flex-direction: column;
     border-radius: 4px;
   }
-  .tools-card-title {
+  .devs-card-title {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 400;
     color: #f0f1f5;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
-  .tools-card-divider {
+  .devs-card-divider {
     width: 100%;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.15);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
-  .tools-card-desc {
-    font-size: 0.95rem;
-    line-height: 1.8;
+  .devs-card-desc {
+    font-size: 0.9rem;
+    line-height: 1.7;
     color: #aaa;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
-  .tools-card-features {
-    list-style: none;
-    padding-left: 0;
-    margin: 0 0 25px 0;
-  }
-  .tools-card-features li {
-    font-size: 0.9rem;
-    line-height: 1.8;
-    color: #888;
-    padding-left: 1.2em;
-    position: relative;
-  }
-  .tools-card-features li::before {
-    content: '▸';
-    position: absolute;
-    left: 0;
-    color: #8b7ec8;
-  }
-  .tools-card-link {
+  .devs-card-link {
     font-family: 'Share Tech Mono', monospace;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #EE7674;
     text-decoration: none;
     transition: color 0.3s ease;
     margin-top: auto;
   }
-  .tools-card-link:hover {
+  .devs-card-link:hover {
     color: #f09695;
   }
   @media (max-width: 768px) {
-    .tools-section {
+    .devs-image {
+      min-height: 40vh;
+    }
+    .devs-content {
       padding: 40px 20px;
     }
-    .tools-cards {
-      flex-direction: column;
-      align-items: center;
-    }
-    .tools-card {
-      max-width: 100%;
-      padding: 30px 25px;
+    .devs-card {
+      padding: 20px;
     }
   }
 
