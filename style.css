@@ -751,6 +751,22 @@
   li.research-item{
     margin-bottom: 1em;
   }
+  .item_links{
+    margin-top: 0.3em;
+    display: flex;
+    gap: 0.5em;
+  }
+  .item-link-btn{
+    padding: 0.15em 0.6em;
+    border: 1px solid #8b7ec8;
+    border-radius: 3px;
+    font-size: 0.85em;
+    color: #8b7ec8 !important;
+  }
+  .item-link-btn:hover{
+    background-color: #8b7ec8;
+    color: #181c25 !important;
+  }
   .item_desc{
     font-weight: 300;
   }
