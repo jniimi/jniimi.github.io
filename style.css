@@ -119,6 +119,22 @@
     font-size: 24px;
     font-weight: 100;
   }
+  .menu a.lang-switch {
+    border: 1px solid rgba(240, 241, 245, 0.5);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+  .menu a.lang-switch:hover {
+    background-color: rgba(240, 241, 245, 0.15);
+  }
+  html[lang="ja"] .lang-en {
+    display: none !important;
+  }
+  html[lang="en"] .lang-ja {
+    display: none !important;
+  }
 
   /* Full-screen sections */
   .full-section {

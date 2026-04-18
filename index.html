@@ -35,6 +35,8 @@
         <a href="education.html">Education</a>
         <a href="seminar.html">Seminar</a>
         <a href="https://note.com/jniimi" target="_blank">Blog</a>
+        <a href="?lang=en" class="lang-ja lang-switch">EN</a>
+        <a href="?lang=ja" class="lang-en lang-switch">JP</a>
     </nav>
     <div class="hero-content">
         <p class="hero-subtitle">— Meijo Univ. —</p>
@@ -50,7 +52,7 @@
     </div>
     <div class="section-content">
       <h1 class="profile-title">Junichiro Niimi</h1>
-      <ul class="affiliation-list">
+      <ul class="affiliation-list lang-ja">
         <li>＊名城大学 経営学部経営学科 准教授</li>
         <li>＊理化学研究所 革新知能統合研究センター (RIKEN AIP) 客員研究員</li>
         <li>＊名古屋大学大学院経済学研究科 国際政策経済研究センター 共同研究員</li>
@@ -58,10 +60,21 @@
         <li>＊音楽 / 現代アートのお仕事 / イベント運営など</li>
         <li>＊<a href="cv.pdf" target="_blank" style="color: #1a1f2e; text-decoration: underline;">CV (PDF)</a></li>
       </ul>
-      <p class="about-desc">深層学習/大規模言語モデルのアーキテクチャ開発およびそれらの行動予測への応用などの研究を行っています。</p>
-      <a href="research.html" class="profile-btn">主要な研究業績</a>
+      <ul class="affiliation-list lang-en">
+        <li>＊Associate Professor, Faculty of Business Management, Meijo University</li>
+        <li>＊Visiting Researcher, RIKEN Center for Advanced Intelligence Project (RIKEN AIP)</li>
+        <li>＊Joint Researcher, International Policy Research Center, Nagoya University</li>
+        <li>＊Technical Advisor for several companies</li>
+        <li>＊Music / Contemporary Art / Event Management</li>
+        <li>＊<a href="cv.pdf" target="_blank" style="color: #1a1f2e; text-decoration: underline;">CV (PDF)</a></li>
+      </ul>
+      <p class="about-desc lang-ja">深層学習/大規模言語モデルのアーキテクチャ開発およびそれらの行動予測への応用などの研究を行っています。</p>
+      <p class="about-desc lang-en">My research focuses on developing architectures for deep learning and large language models (LLMs), and their applications to consumer behavior prediction.</p>
+      <a href="research.html" class="profile-btn lang-ja">主要な研究業績</a>
+      <a href="research.html" class="profile-btn lang-en">Publications</a>
 
       <ul class="social-icon">
+        <li class="icon"><a href="https://scholar.google.co.jp/citations?user=Qfg4LPgAAAAJ" target="_blank"><img src="icons/scholar.svg" class="rounded-icon"></a></li>
         <li class="icon"><a href="https://researchmap.jp/jniimi" target="_blank"><img src="icons/rm.png" class="rounded-icon"></a></li>
         <li class="icon"><a href="https://note.com/jniimi" target="_blank"><img src="icons/note.svg" class="rounded-icon"></a></li>
         <li class="icon"><a href="http://x.com/jniimi" target="_blank"><img src="icons/x.svg" class="rounded-icon"></a></li>
@@ -69,14 +82,15 @@
         <li class="icon"><a href="https://niimiseminar.slack.com" target="_blank"><img src="icons/slack.svg" class="rounded-icon"></a></li>
         <li class="icon"><a href="https://ko-fi.com/jniimi" target="_blank"><img src="img/kofi.png" height="42px" class="rounded-icon-height"></a></li>
       </ul>
-      <p class="social-note">*Slackは招待済みの関係者のみアクセス可能</p>
+      <p class="social-note lang-ja">*Slackは招待済みの関係者のみアクセス可能</p>
+      <p class="social-note lang-en">*Slack is accessible only to invited members</p>
     </div>
     <a href="#research" class="scroll-arrow section-scroll">▽ NEXT ▽</a>
   </section>
 
   <section id="research" class="full-section research-section">
     <h2 class="section-heading">Research Interests</h2>
-    <div class="research-cards">
+    <div class="research-cards lang-ja">
       <div class="research-card">
         <h3 class="research-card-title">統計解析</h3>
         <div class="research-card-divider"></div>
@@ -103,13 +117,40 @@
         </ul>
       </div>
     </div>
+    <div class="research-cards lang-en">
+      <div class="research-card">
+        <h3 class="research-card-title">Statistical Analysis</h3>
+        <div class="research-card-divider"></div>
+        <ul class="research-card-list">
+          <li>Extension of the Clumpiness metric in RFMC analysis and its application to behavior prediction</li>
+          <li>Feature engineering to capture heterogeneity and diversity in consumer behavior</li>
+        </ul>
+      </div>
+      <div class="research-card">
+        <h3 class="research-card-title">Deep Learning</h3>
+        <div class="research-card-divider"></div>
+        <ul class="research-card-list">
+          <li>Multimodal and multi-source fusion using attention mechanisms</li>
+          <li>Joint optimization of classification and regression via multi-task learning</li>
+        </ul>
+      </div>
+      <div class="research-card">
+        <h3 class="research-card-title">Large Language Models (LLMs)</h3>
+        <div class="research-card-divider"></div>
+        <ul class="research-card-list">
+          <li>Stabilizing outputs through ensemble inference</li>
+          <li>Refining sentiment analysis by introducing reference points</li>
+          <li>Structural analysis of hallucination arising from probabilistic learning</li>
+        </ul>
+      </div>
+    </div>
     <a href="#careers" class="scroll-arrow section-scroll">▽ NEXT ▽</a>
   </section>
 
   <!-- Careers Section -->
   <section id="careers" class="full-section careers-section">
     <h2 class="section-heading">Main Career</h2>
-    <div class="timeline-window">
+    <div class="timeline-window lang-ja">
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-dot"></div>
@@ -183,6 +224,80 @@
 
       </div>
     </div>
+    <div class="timeline-window lang-en">
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-org">Meijo University</span>
+              <span class="timeline-role">Associate Professor, Dept. of Business Management</span>
+              <span class="timeline-date">2022 – Present</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-org">Meijo University</span>
+              <span class="timeline-role">Assistant Professor, Dept. of Business Management</span>
+              <span class="timeline-date">2019 – 2022</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-org">RIKEN</span>
+              <span class="timeline-role">Postdoctoral Researcher, Center for Advanced Intelligence Project</span>
+              <span class="timeline-date">2018 – 2019</span>
+            </div>
+            <p class="timeline-desc">Economic and Business Information Analytics Team<br>Research Student (2017-2018), Visiting Researcher (2020 - Present)</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-org">Nagoya University</span>
+              <span class="timeline-role">Ph.D. in Economics (Doctoral Program)</span>
+              <span class="timeline-date">2015 – 2018</span>
+            </div>
+            <p class="timeline-desc">PhD Professional Gateway Program, 1st Cohort (2013-2018)</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-org">Nagoya University</span>
+              <span class="timeline-role">M.A. in Economics (Master's Program)</span>
+              <span class="timeline-date">2013 – 2015</span>
+            </div>
+            <p class="timeline-desc">PhD Professional Gateway Program, 1st Cohort (2013-2018)</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <span class="timeline-org">Nagoya University</span>
+              <span class="timeline-role">B.A. in Economics</span>
+              <span class="timeline-date">2009 – 2013</span>
+            </div>
+            <p class="timeline-desc">Text mining of review data for product attribute extraction</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
     <p class="careers-note">Internship: IBM USA (HQ and Watson Research Center) / Microsoft Japan<br>
         Study Abroad: Mongolia, Cambodia, Kyrgyz Republic, Malaysia, USA (Illinois & North Carolina)</p>
     <a href="#scribbles" class="scroll-arrow section-scroll">▽ NEXT ▽</a>
@@ -192,7 +307,8 @@
   <section id="scribbles" class="full-section scribbles-section">
     <div class="section-center-content">
       <h2 class="section-heading">Scribbles</h2>
-      <p class="scribbles-desc">ここに書かれた内容が私の所属するいかなる組織の意見を代表するものでもないことは自明であるとしても、さらに過去に書かれたあらゆる内容もその文脈における思考実験にすぎないという意味では、それらが現在まで一貫しているという保証など一体どこにあるというのでしょうか。</p>
+      <p class="scribbles-desc lang-ja">ここに書かれた内容が私の所属するいかなる組織の意見を代表するものでもないことは自明であるとしても、さらに過去に書かれたあらゆる内容もその文脈における思考実験にすぎないという意味では、それらが現在まで一貫しているという保証など一体どこにあるというのでしょうか。</p>
+      <p class="scribbles-desc lang-en">Views are my own — and, for that matter, they were my own yesterday too, though I make no promise the two would agree.</p>
       <div id="rss-feed" class="rss-feed"></div>
     </div>
     <a href="#devs" class="scroll-arrow section-scroll">▽ NEXT ▽</a>
@@ -206,19 +322,22 @@
         <div class="devs-card">
           <h3 class="devs-card-title">Alfred Asks Claude</h3>
           <div class="devs-card-divider"></div>
-          <p class="devs-card-desc">macOS上の選択テキストをホットキー一発でClaude APIに送り、翻訳・要約・解説を即座に取得するAlfred Workflow。</p>
+          <p class="devs-card-desc lang-ja">macOS上の選択テキストをホットキー一発でClaude APIに送り、翻訳・要約・解説を即座に取得するAlfred Workflow。</p>
+          <p class="devs-card-desc lang-en">An Alfred Workflow that sends selected text on macOS to the Claude API with a single hotkey for instant translation, summarization, and explanation.</p>
           <a href="https://github.com/jniimi/alfred-asks-claude" target="_blank" class="devs-card-link">GitHub &rarr;</a>
         </div>
         <div class="devs-card">
           <h3 class="devs-card-title">clumpi</h3>
           <div class="devs-card-divider"></div>
-          <p class="devs-card-desc">RFMC分析におけるClumpiness指標を算出するPythonパッケージ。</p>
+          <p class="devs-card-desc lang-ja">RFMC分析におけるClumpiness指標を算出するPythonパッケージ。</p>
+          <p class="devs-card-desc lang-en">A Python package for calculating the Clumpiness metric in RFMC analysis.</p>
           <a href="https://github.com/jniimi/clumpi" target="_blank" class="devs-card-link">GitHub &rarr;</a>
         </div>
         <div class="devs-card">
           <h3 class="devs-card-title">Weather Forecast JP</h3>
           <div class="devs-card-divider"></div>
-          <p class="devs-card-desc">気象庁の7日間予報データを自動取得・蓄積するデータセット。</p>
+          <p class="devs-card-desc lang-ja">気象庁の7日間予報データを自動取得・蓄積するデータセット。</p>
+          <p class="devs-card-desc lang-en">A dataset that automatically collects and accumulates 7-day weather forecast data from the Japan Meteorological Agency.</p>
           <a href="https://huggingface.co/datasets/jniimi/weather_forecast_japan" target="_blank" class="devs-card-link">Hugging Face &rarr;</a>
         </div>
       </div>
@@ -240,9 +359,13 @@
           <h3>E-mail</h3>
           <p>jniimi [AT] meijo-u.ac.jp</p>
         </div>
-        <div class="contact-item">
+        <div class="contact-item lang-ja">
           <h3>Address</h3>
           <p>468-8502 愛知県名古屋市天白区塩釜口1-501<br>名城大学経営学部 新美潤一郎 宛</p>
+        </div>
+        <div class="contact-item lang-en">
+          <h3>Address</h3>
+          <p>1-501 Shiogamaguchi, Tempaku-ku, Nagoya, Aichi 468-8502, Japan<br>Faculty of Business Management, Meijo University</p>
         </div>
       </div>
     </div>
@@ -256,6 +379,7 @@
     <p>Most of the pictures are provided by <a href="https://www.pexels.com" target="_blank">Pexels</a>.</p>
     <p class="copyright">&copy; 2024 JNiimiLab. All rights reserved.</p>
   </footer>
+  <script src="lang.js"></script>
   <script src="rss.js"></script>
   <script>
     document.querySelectorAll('.scroll-arrow').forEach(function(arrow) {
