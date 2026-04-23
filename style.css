@@ -783,6 +783,17 @@
     background-color: #8b7ec8;
     color: #181c25 !important;
   }
+  .item-desc-badge{
+    display: inline-block;
+    padding: 0.1em 0.55em;
+    border: 1px solid #d4a835;
+    border-radius: 3px;
+    font-size: 0.8em;
+    color: #d4a835;
+    font-weight: 400;
+    vertical-align: middle;
+    margin-right: 0.4em;
+  }
   .item_desc{
     font-weight: 300;
   }
