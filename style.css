@@ -767,10 +767,12 @@
   li.research-item{
     margin-bottom: 1em;
   }
-  .item_links{
+  .page-research .item_links{
     margin-top: 0.3em;
     display: flex;
     gap: 0.5em;
+    flex-wrap: wrap;
+    max-width: 100%;
   }
   .item-link-btn{
     padding: 0.15em 0.6em;
