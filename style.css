@@ -797,6 +797,11 @@
   .item_desc{
     font-weight: 300;
   }
+  .item_doi,
+  .item_doi a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
 
   h3.education-univ-name{
     margin-top: 30px;
